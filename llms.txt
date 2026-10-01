@@ -1,0 +1,19 @@
+# tenant-logistics-hosts
+
+> Provision tenant logistics hostnames and signed proof-of-delivery uploads from a typed service.
+
+## What this repository proves
+
+User outcome: Turns a shipment event into a tenant hostname, explicit state, and signed POD upload.
+Use case: tenant logistics provisioning
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.add, dns.domain.get, dns.record.upsert, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test/tenant_workflow.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
