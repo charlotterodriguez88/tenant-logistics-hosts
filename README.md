@@ -64,3 +64,7 @@ The snippet above is deliberately small. For production you'll wire a few more p
 **Tenant Logistics Hosts: Storage**
 - **Tenant Logistics Hosts:** Provision the bucket with correct ACL/region early (`POST /v1/storage/bucket/create`); enable CORS for browser uploads (`POST /v1/storage/bucket/set_cors`).
 - **Tenant Logistics Hosts:** Presigned URLs expire, so pick the shortest lifetime that works. Stored objects cost GB·month; add a TTL/lifecycle to reclaim idle blobs.
+
+## Further reading
+
+- [Edtech Environment Configuration: 2 DNS Zone Identifier Assertions for Deliverability](docs/edtech-environment-configuration-2-dns-zone-ident-phyzrt.md)
